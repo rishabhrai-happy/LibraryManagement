@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LibraryManagement</string>
+    <string name="studentlogin">StudentLogin</string>
+    <string name="teacherslogin">TeachersLogin</string>
 </resources>
