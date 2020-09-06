@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         login_btn.setOnClickListener{
           var status=  if(username_et.text.toString().equals("technowordid")
-                && paasword_et.text.toString().equals("password")) "login succesfull" else "login fail"
+                && paasword_et.text.toString().equals("password") )"login succesfull" else "login fail"
             Toast.makeText(this,"status", Toast.LENGTH_SHORT).show()
         }
 
