@@ -2,4 +2,8 @@
     <string name="app_name">LibraryManagement</string>
     <string name="studentlogin">StudentLogin</string>
     <string name="teacherslogin">TeachersLogin</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChoosingofStudentandTeacher"></activity>
+        <activity android:name=".TeacherPage"></activity>
+        <activity android:name=".StudentPage" />
+        <activity android:name=".ChoosingofStudentandTeacher" />
         <activity android:name=".TeacherLogin" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".FrontPage"
+        <activity
+            android:name=".FrontPage"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
