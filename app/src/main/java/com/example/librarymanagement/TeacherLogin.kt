@@ -1,5 +1,6 @@
 package com.example.librarymanagement
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -10,9 +11,7 @@ class TeacherLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teacher_login)
         login_btn.setOnClickListener{
-            var status=  if(username_et.text.toString().equals("technowordid")
-                && paasword_et.text.toString().equals("password") )"login succesfull" else "login fail"
-            Toast.makeText(this,"status", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,TeacherPage::class.java))
         }
     }
 }

@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -18,27 +19,15 @@ class TeacherPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teacher_page)
-       // val buttomNevigationView=findViewById<BottomNavigationItemView>(R.id.buttomnevigationView_teacher)
+        val bottomNevagition:BottomNavigationView=findViewById(R.id.buttomnevigationView_teacher)
         val navController=findNavController(R.id.fragment2)
-        val appBarConfiguration=
-            AppBarConfiguration(setOf(R.id.teacherfirst_fragment,R.id.teachersecond_fragment,R.id.teacherthird_fragment,R.id.teacherfourth_fragment))
-        setupActionBarWithNavController(navController,appBarConfiguration)
-         homeFragmen= teacherfirst_fragment()
-         issuBook= teachersecond_fragment()
-         Registerd= teacherthird_fragment()
-         fine=teacherfourth_fragment()
+        val appbarConfigaretion= AppBarConfiguration(setOf(R.id.teacherfirst_fragment,R.id.teachersecond_fragment,R.id.teacherthird_fragment,R.id.teacherfourth_fragment))
+        setupActionBarWithNavController(navController,appbarConfigaretion)
+        bottomNevagition.setupWithNavController(navController)
 
 
 
-        //buttomNevigationView.setupWithNavController(navController)
-        BottomNavigationView.OnNavigationItemReselectedListener {
-            item ->
 
-            when(item.itemId){
-                R.id.teacherfirst_fragment ->{
-                    fragment=homeFragmen
-                }
-            }
-        }
+
     }
 }
