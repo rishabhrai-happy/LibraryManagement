@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_nav_menu"
+    app:startDestination="@id/teacherfirst_fragment">
+
+    <fragment
+        android:id="@+id/teacherfirst_fragment"
+        android:name="com.example.librarymanagement.teacherfirst_fragment"
+        android:label="fragment_teacherfirst_fragment"
+        tools:layout="@layout/fragment_teacherfirst_fragment" />
+    <fragment
+        android:id="@+id/teachersecond_fragment"
+        android:name="com.example.librarymanagement.teachersecond_fragment"
+        android:label="fragment_teachersecond_fragment"
+        tools:layout="@layout/fragment_teachersecond_fragment" />
+    <fragment
+        android:id="@+id/teacherthird_fragment"
+        android:name="com.example.librarymanagement.teacherthird_fragment"
+        android:label="fragment_teacherthird_fragment"
+        tools:layout="@layout/fragment_teacherthird_fragment" />
+    <fragment
+        android:id="@+id/teacherfourth_fragment"
+        android:name="com.example.librarymanagement.teacherfourth_fragment"
+        android:label="fragment_teacherfourth_fragment"
+        tools:layout="@layout/fragment_teacherfourth_fragment" />
+</navigation>
