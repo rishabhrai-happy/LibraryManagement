@@ -11,7 +11,7 @@ class TeacherLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teacher_login)
         login_btn.setOnClickListener{
-            startActivity(Intent(this,TeacherPage::class.java))
+            startActivity(Intent(this,TeacherLogin::class.java))
         }
     }
 }

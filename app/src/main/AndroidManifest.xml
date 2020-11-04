@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SignupForStudent"></activity>
         <activity android:name=".StudentPage" />
-        <activity android:name=".TeacherPage" />
+
         <activity android:name=".ChoosingofStudentandTeacher" />
         <activity android:name=".TeacherLogin" />
         <activity android:name=".MainActivity" />

@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="385dp"
-        android:layout_height="190dp"
+        android:layout_height="300dp"
         android:layout_marginVertical="280sp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,14 +19,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/username_et"
+            android:id="@+id/username_et_signup"
             android:layout_width="317dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30sp"
             android:hint="username"></EditText>
 
         <EditText
-            android:id="@+id/paasword_et"
+            android:id="@+id/paasword_et_signup"
             android:layout_width="317sp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30sp"
@@ -34,19 +34,45 @@
             android:inputType="textPassword">
 
         </EditText>
+        <EditText
+            android:id="@+id/email_et_signup"
+            android:layout_width="317sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:hint="email"
+            android:inputType="textPassword">
 
+        </EditText>
+        <EditText
+            android:id="@+id/repaasword_et_signup"
+            android:layout_width="317sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:hint="confirm-password"
+            android:inputType="textPassword">
+
+        </EditText>
+        <EditText
+            android:id="@+id/phonenumber_et_signup"
+            android:layout_width="317sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:hint="phonenumber"
+            android:inputType="textPassword">
+
+        </EditText>
         <Button
-            android:id="@+id/login_btn"
+            android:id="@+id/signup_btn"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:text="Login"></Button>
+            android:text="signup"></Button>
 
         <TextView
             android:id="@+id/textView123"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="signup"
+            android:text="login"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16000003"
-        app:srcCompat="@drawable/download"></ImageView>
-
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/download" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
