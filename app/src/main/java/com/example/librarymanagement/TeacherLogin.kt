@@ -59,7 +59,7 @@ class TeacherLogin : AppCompatActivity() {
     private  fun updateUI(currentuser:FirebaseUser?){
         if(currentuser!=null){
             Toast.makeText(baseContext,"Login sucsessful", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this,StudentPage::class.java))
+            startActivity(Intent(this,TeacherPage::class.java))
             finish()
         }
         else{
