@@ -32,9 +32,9 @@ class student_books : AppCompatActivity() {
         db.collection("books").get().addOnSuccessListener { documents ->
             for (document in documents) {
                 val a = document.data
-
+                 val k = a.toString().substring(10,a.toString().length-1)
                 Log.d("info", "get failed with =" + document.data.toString())
-                user.add(Data(a.toString()))
+                user.add(Data(k))
             }
             adapter = NoteAdapter(user)
             recyclerView.adapter = adapter

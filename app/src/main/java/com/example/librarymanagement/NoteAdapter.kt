@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class NoteAdapter(val arraylist : ArrayList<Data>) : RecyclerView.Adapter<NoteAdapter.viewHolder>() {
+class NoteAdapter(val arraylist : ArrayList<Data>): RecyclerView.Adapter<NoteAdapter.viewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.list_cardview,parent,false)
