@@ -31,12 +31,12 @@ class student_books : AppCompatActivity() {
 
         db.collection("books").get().addOnSuccessListener { documents ->
             for (document in documents) {
-                val a = document.data
-                 val k = a.toString().substring(10,a.toString().length-1)
+                val a = document.data["bookname"] as String
+                // val k = a.toString().substring(10,a.toString().length-1)
                 Log.d("info", "get failed with =" + document.data.toString())
                 user.add(Data(k))
             }
-            adapter = NoteAdapter(user)
+            adapter = NoteAdapter(user,this)
             recyclerView.adapter = adapter
         }.addOnFailureListener { exception ->
             Log.d("info", "get failed with ", exception)

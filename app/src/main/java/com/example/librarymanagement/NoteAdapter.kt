@@ -6,11 +6,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class NoteAdapter(val arraylist : ArrayList<Data>): RecyclerView.Adapter<NoteAdapter.viewHolder>() {
+class NoteAdapter(val arraylist : ArrayList<Data>,val studentBooks: student_books): RecyclerView.Adapter<NoteAdapter.viewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.list_cardview,parent,false)
-        return viewHolder(v)
+        return NoteAdapter.viewHolder(v)
     }
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
@@ -23,8 +23,12 @@ class NoteAdapter(val arraylist : ArrayList<Data>): RecyclerView.Adapter<NoteAda
     }
 
 
-    class viewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
+    class viewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) , View.OnClickListener {
         val textViewName = itemView.findViewById(R.id.text_View)as TextView
+        override fun onClick(v: View?) {
+
+        }
+
     }
 
 
